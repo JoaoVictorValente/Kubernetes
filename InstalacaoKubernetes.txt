@@ -1,4 +1,4 @@
-****************INSTALAÇÃO DOCKER******************
+######################INSTALAÇÃO DOCKER######################
 
 apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
@@ -12,7 +12,7 @@ apt install docker-ce docker-ce-cli containerd.io
 
 systemctl status docker
 
-****************INSTALAÇÃO KUBERNETES******************
+######################INSTALAÇÃO KUBERNETES######################
 
 apt-get update
 
@@ -28,7 +28,7 @@ apt-get update
 
 apt-get install -y kubectl
 
-****************INSTALAÇÃO MINIKUBE ******************
+######################INSTALAÇÃO MINIKUBE ######################
 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 
