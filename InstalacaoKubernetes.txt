@@ -37,6 +37,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest
 sudo dpkg -i minikube_latest_amd64.deb
 ######################CONFIGURANDO PORTA PADRÃO#################
 apt install firewalld
+kubectl proxy --address='0.0.0.0' --disable-filter=true
 firewall-cmd --zone=public --add-port=8001/tcp --permanent
 firewall-cmd --reload
 
