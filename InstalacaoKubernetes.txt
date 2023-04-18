@@ -35,6 +35,10 @@ apt-get install -y kubectl
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 
 sudo dpkg -i minikube_latest_amd64.deb
+######################CONFIGRANDO O START DO MINIKUBE#################
+
+minikube start --cpus=2 --memory 4096 --disk-size 15g --force
+
 ######################CONFIGURANDO PORTA PADRÃO#################
 apt install firewalld
 kubectl proxy --address='0.0.0.0' --disable-filter=true
